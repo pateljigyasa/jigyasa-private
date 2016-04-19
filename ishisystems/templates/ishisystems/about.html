@@ -1,0 +1,133 @@
+{%extends 'base.html'%}  
+
+ {% block title %}ISHI: 20 Years of Innovation and Excellence{% endblock title %} 
+ {% block head_canonical %} <link rel="canonical" href="/about/">{% endblock head_canonical %}
+ 
+ 
+ 
+ {% block content %} 
+	 {%block sub_menu%} 
+	 	{% include  "about_drop_down_sub_menu.html" %}
+     {%endblock%}
+	<div class="page-content">
+      	<div class="wrap">
+			<div class="container">
+				<div class="jumbotron center">
+					<h1>To be an enduring platform for innovation<br> and excellence, to create  products that<br> delight our customers.</h1>
+					<h4>- Ishi Vision</h4>
+				</div>
+			</div>
+			<div class="map-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 address-div col-md-offset-1">
+							<div class="row">
+								<div class="col-md-12 informative-text" id="usText">
+									<p>Corporate headquarters</p>
+									<p>Located in Jersey City, NJ</p>
+								</div>
+								<div class="col-md-12 informative-text hidden" id="zurichText" >
+									<p>Development & Operations</p>
+									<p>Located in Sursee, Lucerne</p>
+								</div>
+								<div class="col-md-12 informative-text hidden" id="indiaText" >
+									<p>Research, Product Development</p>
+									<p>Located in Ahmedabad</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4" id="usIndicator">
+									<i class="fa fa-caret-up"></i>
+								</div>
+								<div class="col-md-4 hidden col-md-offset-3" id="zurichIndicator">
+									<i class="fa fa-caret-up"></i>
+								</div>
+								<div class="col-md-2 hidden col-md-offset-7" id="indiaIndicator">
+									<i class="fa fa-caret-up"></i>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<a onclick="site.displayUSText()">USA</a><span>|</span><a onclick="site.displayZurichText()">Switzerland</a><span>|</span><a onclick="site.displayIndiaText()">India</a>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-8 center">
+							<h2>Driving growth through innovation for 20 years</h2>
+							<h4>CORE VALUES</h4>
+							<p>Build around the core values of Delivery, Quality and Creativity, Ishi is a product design and engineering firm. Our primary focus is creating managed solutions and products that leverage
+							 high performance computing, big data and analytics.</p><br>
+							<h4>CUSTOMER FOCUS</h4>
+							<p>At Ishi, Customer Value and Customer Intimacy are the key principles that guide the delivery and quality of our solutions. Understanding and delivering value to our customers
+								is the central business skill of our teams and leaders. This manifests in our approach of prioritizing the delivery of highest value in the shortest time.</p><br>
+							<h4>TRACK RECORD</h4>
+							<p>Since 1994, we have helped a myriad of customers ranging from leading insurance, telecom, financial services, media and pharmaceuticals companies to start-ups. Our teams, skilled in user experience design, business analysis, contemporary processes and technology, work closely with our customers to deliver innovative solutions.</p><br>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="section-light-grey cap-section our-people-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-align-center">
+							<h2 class="margin-bottom">Our People</h2>
+							<br>
+						</div>
+					</div>
+					<div class="row center" id="team_list" name="team_list">
+			
+					</div>
+					<div class="row center" id="team_list_all" name="team_list_all">
+						<p>&nbsp;MORE</p>
+						<a class="more-link" onclick="loadPeople(0,'team_list_all');"><p><i class="fa fa-caret-down"></i></p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{%endblock content%}
+{% block page_usable_javascript %} 
+	<script> 
+	   	var people = {{ peoples|safe }}; 
+		function getRandomArbitrary(min, max) {
+			return Math.random() * (max - min) + min;
+		}
+		function loadPeople(count,container){
+			if (count==0){
+				total_count=people.length;
+			}
+			else{
+				total_count = count;
+			}
+			var teamHTML = "<ul class='team'>";
+			for (i = 0; i < total_count; i++) {
+				if (count > 0){
+					if (i <5){
+						idx =getRandomArbitrary(0,31-i);
+					}
+					else{
+						idx = getRandomArbitrary(26,people.length-1);
+					}
+				}
+				else
+				{
+					idx = getRandomArbitrary(0,people.length-1);
+				}
+				person = people.splice(idx,1);
+				teamHTML+="<li><img src='{{baseUrl}}ishisystems/" + person[0][1] + "'/><br><span>" +   person[0][0] + "</span></li>"
+			}
+			teamHTML+="</ul>";
+			document.getElementById(container).innerHTML = teamHTML;
+		}
+		loadPeople(6,'team_list');
+	</script>
+{% endblock page_usable_javascript %}

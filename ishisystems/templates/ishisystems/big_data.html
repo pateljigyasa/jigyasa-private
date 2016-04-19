@@ -1,0 +1,106 @@
+{%extends 'base.html'%} 
+
+#Change page specific attributes 
+ 
+{% block title %}ISHI-Capabilities:High Performance Systems, Real-time Processing, Distributed Computing, Big Data, Cluster Management{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/big-data/">{% endblock head_canonical %}
+{% block link_cap_class %}active{% endblock %}
+{% block content %} 
+
+	{%block sub_menu%} 
+		{% include  "capabilities_sub_menu.html" %}
+    {%endblock%}
+
+    <div class="page-content">
+		<div class="wrap">
+			<div class="container">
+				<div class="jumbotron center">
+					<h1>Channel the growing deluge of data to drive strategic intelligence and create new revenue opportunities.</h1>
+				</div>
+			</div>
+		</div>
+
+	<div class="big-data-img-section">
+		<div class="row">
+			<div class="col-md-5 case-study">
+				<div class="col-md-6">
+					<h3>Case Study</h3>
+					<h4>Big Data &amp; Compliance</h4>
+				</div>
+				<div class="col-md-6">
+					<a href="/case-study-big-data/"><i class="fa  fa-caret-right"></i></a>
+				</div>
+			</div>
+			<div class="col-md-7 center" style="background-color:#000;">
+				<img src="{{baseUrl}}ishisystems/images/big_data.png"></img>
+			</div>
+		</div>
+	</div>
+	<div class="text-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-10 center">
+					<h2>Proven Expertise with Web-scale Data Processing</h2>
+					<p>Businesses today are expecting a deluge of data - exabytes instead of terabytes, unstructured instead of relational. Traditional architectures are grossly insufficient for the volume, velocity and variety of data being collected.</p><br>
+					<p>We are Big Data and distributed computing experts who have dealt with web scale volumes of data cost effectively. We have architected some of the most demanding data environments processing billions of messages a day.</p>			</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="big-data-solution">
+		<div class="container">
+			<div class="col-md-5 big-data-arch">
+				<h1>Reference<br>Architecture</h1>
+				<h4>Abstracted from a recent project</h4>
+			</div>
+			<div class="col-md-7 center">
+				<img src="{{baseUrl}}ishisystems/images/big-data-ref.png"></img>
+			</div>
+		</div>
+	</div>
+	<div class="text-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-10 center"><br>
+					<p><b>At Ishi</b>, we have acquired a deep understanding of all aspects of Big Data including volume, velocity, data quality and variety.</p><br>
+					<p>We have consistently helped our customers achieve operational agility by managing large volumes of data seamlessly and making it accessible to users in the most appropriate formats including reports, analytics and real time alerts. Our solutions help customers uncover value form their disparate and expansive data assets by applying knowledge discovery techniques and machine learning principles.</p><br>
+					<p>Ishi can help you manage, retain and analyze your growing data assets. We can identify the right architecture and solution platform mix to help you manage your data in a cost effective and easily accessible manner. We have extensive experience in architecting and deploying big data infrastructure on the cloud as well as enterprise data centers.</p>
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="beyond-solution">
+		<div class="container">
+			<div class="row margin-bottom">
+				<div class="col-md-12 center">
+					<h2>Beyond the Solution...</h2>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 15px;">
+				<div class="col-md-12 center">
+					<p><span class="big-font">Implement</span> network and application architecture, data security, enterprise systems integration, operational plans, backup and DR strategies for Big Data.</p><br>
+					<p><span class="big-font">Scale</span> your infrastructure as your data grows and changes.</p><br>
+					<p><span class="big-font">Support</span> your data infrastructure and operations for high availability and reliability.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="big-data-text section-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 center">
+					<img src="{{baseUrl}}ishisystems/images/big-data-technology.png"></img
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}

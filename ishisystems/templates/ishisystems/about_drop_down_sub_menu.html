@@ -1,0 +1,22 @@
+<!-- About Sub menu -->
+{%load utils%}
+{%if about_drop_down_menu == "True" %} 
+	<ul class="dropdown-menu" role="menu"> 
+	     <li><a  href="/about/">COMPANY</a></li> 
+	     <li><a  href="/careers/">CAREERS</a></li> 
+	     <li><a  href="/careers/#positions">OPEN POSITIONS</a></li>
+	     <li><a  href="/clients/">CLIENTS</a></li>
+	     <li><a  href="/contactus/">CONTACT US</a></li> 
+	</ul>
+{%else%}
+	<div class="row">
+		<div class="float-right">
+		  <ul class="nav navbar-nav sub-menu">
+			<li class="{% active 'about' %}"><a href="/about/" class="dummyClass3">Company</a></li>
+			<li class="{% active 'careers' %}"><a href="/careers/" class="dummyClass3">Careers</a></li>
+			<li class="{% active 'clients' %}"><a href="/clients/" class="dummyClass3">Clients</a></li>
+			<li class="{% active 'contactus' %}"><a href="/contactus/" class="dummyClass3">Contact Us</a></li>
+		  </ul>
+		</div>
+	</div>
+{%endif%}

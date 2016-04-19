@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------------- #
+# Script created by:     Jigyasa					 					 #
+# Target DBMS:           MySQL 5                                         #
+# Project file:          innercircle-db-schema.dez                       #
+# Project name:          ishisystems.com                                 #
+# Author:                Alter database script                           #
+# Created on:            2015-11-9 16:00                            	 #
+# ---------------------------------------------------------------------- #
+
+# ---------------------------------------------------------------------- #
+#  Insert all the job position in job table 				 			 #
+# -----------------------------------------------------------------------# 
+
+
+#Sql queries for job table 
+insert into ishisystems_job values(1,"USA","Jersey City, NJ","Data Center & Cloud Architect","Full-time","-","DOE","/content/jobs/us_cloud_architect.html",now(),now()); 
+
+insert into ishisystems_job values(2,"USA","Jersey City, NJ","Sr. Enterprise Sales Executive","Full-time", 
+"Enterprise Sales, Managed Solutions, Business Development","DOE","/content/jobs/us_enterprise_sales_executive.html",now(),now()); 
+
+
+insert into ishisystems_job values(3,"USA","Jersey City, NJ","Sr. Software Engineer (JEE)","Full-time", "Java, JEE, Spring, Hibernate, Messaging Middleware, 
+RDBMS, NoSQL DB","DOE","/content/jobs/senior_software_engineer_java.html",now(),now()); 
+
+insert into ishisystems_job values(4,"USA","Jersey City, NJ","Sr. Software Engineer (Web)","Full-time", "Java, JEE, AngularJS, JQuery, JSF/GWT, Spring, Hibernate, RDBMS","DOE","/content/jobs/senior_software_engineer_web.html",now(),now()); 
+
+insert into ishisystems_job values(5,"USA","Jersey City, NJ","Sr. DevOps Engineer","Full-time", "Systems Administration, Cloud/Data Center Architecture, Deployment Automation, Continuous Integration","DOE","/content/jobs/sr_devops_engineer.html",now(),now());
+
+insert into ishisystems_job values(6,"USA","Jersey City, NJ","Sr. Technical Architect","Full-time", "JAVA, JEE, Middleware Technologies, Scalable Architecture, NoSQL DB, RDBMS, Web UI Technologies", "DOE","/content/jobs/senior_technical_architect.html",now(),now());
+
+insert into ishisystems_job values(7,"USA","Jersey City, NJ","Technical Recruiter","Full-time", "Ability to recruit exceptional technical talent", "DOE","/content/jobs/technical_recruiter_us.html",now(),now());	
+
+insert into ishisystems_job values(8,"USA","Jersey City, NJ","Visual Designer","Full-time", "Design of web-based & mobile apps, UX, Wireframes, Prototyping, Graphic Design, Adobe Illustrator, Axure, Balsamiq","DOE","/content/jobs/ux_visual_designer.html",now(),now());
+
+
+insert into ishisystems_job values(9,"Switzerland","Sursee, Lucerne","Data Center & Cloud Architect","Full-time","-","DOE","/content/jobs/us_cloud_architect.html",now(),now()); 
+
+insert into ishisystems_job values(10,"Switzerland","Sursee, Lucerne","Sr. Software Engineer (JEE)","Full-time", "Java, JEE, Spring, Hibernate, Messaging Middleware, 
+RDBMS, NoSQL DB","DOE","/content/jobs/senior_software_engineer_java.html",now(),now()); 
+
+insert into ishisystems_job values(11,"Switzerland","Sursee, Lucerne","Sr. Software Engineer (Web)","Full-time", "Java, JEE, AngularJS, JQuery, JSF/GWT, Spring, Hibernate, RDBMS","DOE","/content/jobs/senior_software_engineer_web.html",now(),now());
+
+insert into ishisystems_job values(12,"Switzerland","Sursee, Lucerne","Sr. DevOps Engineer","Full-time", "Systems Administration, Cloud/Data Center Architecture, Deployment Automation, Continuous Integration","DOE","/content/jobs/sr_devops_engineer.html",now(),now()); 
+ 
+insert into ishisystems_job values(13,"Switzerland","Sursee, Lucerne","Technical Architect","Full-time", "JAVA, JEE, Middleware Technologies, Scalable Architecture, NoSQL DB, RDBMS, Web UI Technologies","DOE","/content/jobs/ch_technical_architect.html",now(),now());			
+
+insert into ishisystems_job values(14,"India","Ahmedabad","HR Business Partner","Full-time", "Employee Engagement, Policies & Procedures, Performance Management","DOE" ,"/content/jobs/hr_business_partner.html",now(),now()); 
+
+insert into ishisystems_job values(15,"India","Ahmedabad","Programmer Analyst (JAVA)","Full-time", "Core Java, J2EE, Hibernate, Spring, Databases, Scripting, Big Data, NoSQL, Linux, Agile","DOE","/content/jobs/senior_software_engineer_java.html",now(),now()); 
+
+insert into ishisystems_job values(16,"India","Ahmedabad","Programmer Analyst (LTE)","Full-time", "LTE EPC, GTPv2, Diameter, C, C++, Linux","DOE","/content/jobs/programmer_analyst_lte.html",now(),now()); 
+insert into ishisystems_job values(17,"India","Ahmedabad","Programmer Analyst (WEB)","Full-time", "Java, Python, HTML5, CSS, JavaScript, Frameworks, JSF, Spring MVC","DOE","/content/jobs/senior_software_engineer_web.html",now(),now()); 
+insert into ishisystems_job values(18,"India","Ahmedabad","QA Analyst-Automation","Full-time", "Selenium, QC, Scripting, Agile, Functional testing","DOE","/content/jobs/qa_automation_engineer.html",now(),now());
+insert into ishisystems_job values(19,"India","Ahmedabad","Sr. DevOps Engineer","Full-time", "Systems Administration, Cloud/Data Center Architecture, Deployment Automation, Continuous Integration","DOE","/content/jobs/sr_devops_engineer.html",now(),now());	
+
+insert into ishisystems_job values(20,"India","Ahmedabad","Sr. Technical Architect","Full-time", "JAVA, JEE, Middleware Technologies, Scalable Architecture, NoSQL DB, RDBMS, Web UI Technologies","DOE","/content/jobs/in_technical_architect.html",now(),now());
+
+insert into ishisystems_job values(21,"India","Ahmedabad","Technical Recruiter","Full-time", "Ability to recruit exceptional technical talent","DOE","/content/jobs/technical_recruiter_in.html",now(),now());	
+
+insert into ishisystems_job values(22,"India","Ahmedabad","UX &amp; Bold Visual Designer","Full-time", "UX, Wireframes, Prototyping, Graphic Design, Adobe Illustrator, Axure, Balsamiq","DOE","/content/jobs/ux_visual_designer.html",now(),now());			

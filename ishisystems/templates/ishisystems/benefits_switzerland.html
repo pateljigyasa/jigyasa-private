@@ -1,0 +1,44 @@
+{%extends 'base.html'%}  
+
+ {% block title %}ISHI: Benefits-Switzerland{% endblock title %} 
+ {% block head_canonical %} <link rel="canonical" href="//benefits-switzerland/">{% endblock head_canonical %} 
+ {%block header%}
+        {%include 'header_static.html' with li_display_text="CAREERS@ISHI"%}
+ {%endblock header%}  
+ {% block content %}
+ <div class="page-content">
+      <div class="wrap">
+		<div class="jumbotron center">
+			<h2>Summary of Benefits</h2>
+			<h4>Switzerland Office</h4>
+		</div>
+	<div class="container benefits-section">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 center">
+				<h4>Health, Life and Disability Insurance</h4>
+				<p>Ishi Systems provides comprehensive health, life and disability benefits including:
+					<li>Social Basic Insurance including old age, disability, and unemployment</li>
+					<li>Pension plan</li>
+					<li>Occupational and Non-Occupational Accident insurance</li>
+					<li>Supplementary Accident insurance</li>
+					<li>Sick Pay insurance</li>
+					<li>Short Term Disability, Long Term Disability, and Death</li>
+				</p>
+				<hr>
+				<h4>Holidays and Paid Leave</h4>
+				<li>Minimum of five weeks paid time off per year based on age</li>
+				<li>Holiday pay for cantonal holidays</li>
+				<li>Bereavement leave and other personal days</li>
+				<hr>
+				<h4>Relocation Benefits</h4>
+				Ishi provides a comprehensive relocation package as well as any assistance necessary for all positions.
+				<br><br><br>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+
+      </div>
+    </div>
+ {% endblock content %}

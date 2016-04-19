@@ -1,0 +1,45 @@
+{%extends 'base.html'%}  
+
+ {% block title %}ISHI: Benefits-India{% endblock title %} 
+ {% block head_canonical %} <link rel="canonical" href="//benefits-india/">{% endblock head_canonical %} 
+ {%block header%}
+        {%include 'header_static.html' with li_display_text="CAREERS@ISHI"%}
+ {%endblock header%} 
+ {% block content %}
+ <div class="page-content">
+      <div class="wrap">
+	<div class="jumbotron center">
+		<h2>Summary of Benefits</h2>
+		<h4>India Office</h4>
+	</div>
+	<div class="container benefits-section">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 center">
+				<h4>Health, Life and Disability Insurance</h4>
+				<p>Ishi Systems provides comprehensive health, life and disability benefits including:
+					<li>Group Mediclaim for you and your family - such as your spouse and up to 2 children</li>
+					<li>Group Personal Accident Policy for you includes:<br>
+					- Short Term Disability<br>
+					- Long Term Disability<br>
+					- Accidental Death
+					</li>
+				</p>
+				<hr>
+				<h4>Holidays and Paid Leave</h4>
+				<P>Three weeks paid time off per year. We allow up to 30 days to be carried forward to the next year at the end of the year. Additional holidays and paid leave:</P>
+				<li>Holiday pay for 10 holidays a year</li>
+				<li>12 paid personal days</li>
+				<li>Bereavement Leave</li>
+				<hr>
+				<h4>Relocation Benefits</h4>
+				<p>Ishi provides a comprehensive relocation package as well as any assistance necessary for all positions.</p>
+				<br><br>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+
+      </div>
+    </div>
+ {% endblock content %}

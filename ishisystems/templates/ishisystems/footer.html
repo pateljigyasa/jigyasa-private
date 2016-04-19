@@ -1,0 +1,37 @@
+<!-- Footer of the site included in base template-->
+{% load utils %}
+{% bool_match_url_with_current_path 'response-thanks' as is_response_thanks_url %} 
+<!-- Footer  of the website -->
+		<footer class="site-footer">
+	        <div class="section-gray">
+	            <div class="container">
+	                <div class="row" >
+	                    <div class="col-md-3">
+	                        <h4><img src="{{ baseUrl }}ishisystems/images/ishi_white.png" alt="Ishi Systems"></h4>
+	                        <p>Quality. Delivery. Creativity.</p>
+	                    </div>
+	                    <div class="col-md-3">
+	                        <h4>ABOUT</h4>
+	                        <p>Ishi is a software services and product engineering firm focused on highly scalable, real-time systems.</p>
+	                    </div> 
+	                    {% if is_response_thanks_url %}
+	                    	{%include "footer_response_thanks_static_blocks.html"%}
+	                    {%else%}
+	                    	{%include "footer_middle_section.html"%}
+	                    {%endif%}
+	                </div>
+	            </div>
+	        </div>
+ 
+	        <div class="section-gray-2">
+	            <div class="row">
+	                <div class="col-md-6">Copyright Ishi Systems. All Rights Reserved &copy; {%now "Y"%}</div>
+	                <div class="col-md-6">
+	          			  <a href="/contactus/" class="pull-right">Contact</a> 
+	                     <a href="{%url 'careers' %}" class="pull-right">Careers</a> 
+	                     <a href="{%url 'about'  %}" class="pull-right">About</a> 
+	              		
+	                </div>
+	            </div>
+	        </div>
+    	</footer>

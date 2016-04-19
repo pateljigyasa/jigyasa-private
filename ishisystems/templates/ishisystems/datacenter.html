@@ -1,0 +1,112 @@
+{%extends 'base.html'%} 
+
+#Change page specific attributes 
+ 
+{% block title %}ISHI: Data Center Scaling, Mesos, Mesosphere, Docker{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/datacenter/">{% endblock head_canonical %}
+ 
+{% block content %} 
+	{%block sub_menu%} 
+	     	{% include  "services_sub_menu.html" %}
+     {%endblock%}
+    <div class="page-content">
+      <div class="wrap">
+		<div class="container">
+			<div class="jumbotron center">
+				<h1>Transform your data center into a high performance, efficient and elastic compute platform.</h1>
+				<h4>New cluster management and container-based technologies are redefining the data center</h4>
+			</div>
+		</div>
+		<div class="datacenter-section1">
+			<div class="container">
+				<div class = "col-md-7 center">
+					<img src="{{baseUrl}}ishisystems/images/cluster_intro2.png"></img>
+				</div>
+				<div class = "col-md-5 cluster-intro-text">
+					<p><i class="fa fa-check"></i>&nbsp;&nbsp;High utilization and efficiency</p>
+					<p><i class="fa fa-check"></i>&nbsp;&nbsp;Massively scalable with low latency</p>
+					<p><i class="fa fa-check"></i>&nbsp;&nbsp;Low operational overhead</p>
+					<p><i class="fa fa-check"></i>&nbsp;&nbsp;Reduced infrastructure costs</p>
+				</div>
+			</div>
+		</div>
+		<div class="section-light datacenter-section2">
+			<div class="container center">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 center">
+					<h2>Effective Infrastructure Is Critical For Business Viability</h2>
+					<p>Enterprises are idling close to 85% of their compute capacity while applications are typically starved for resources. The intense, competitive environment does not allow Enterprises to ignore this huge inefficiency any longer.</p>
+					<p>We leverage the power of Apache Mesos - a fault tolerant, distributed cluster manager, to bring a web scale, efficient computing platform to the enterprise. We have implemented and scaled systems to handle 10s of thousands of TPS across disparate applications while better utilizing the infrastructure.</p>
+					<p>The result is a computing platform that provides low latency, high server utilization, massive scalability and low operational overhead.</p>
+					<p class="text-align-center font-bold"><a href="/case-study-data-center-scaling" class="get-in-touch-box">CASE STUDY</a></p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<div class="datacenter-docker">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 center col-md-offset-1">
+						<img src="{{baseUrl}}ishisystems/images/docker.png"></img>
+					</div>
+					<div class="col-md-8 center">
+						<p><span class="big-font">Docker</span> is an open-source project that automates the deployment of applications inside software containers, by providing and additional layer of abstraction and automation of operating system-level virtualization on Linux.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="datacenter-mesophere">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-8 center">
+						<p><span class="big-font">Mesosphere</span> combines your datacenter servers and cloud instances into one shared pool from which any app or framework can draw.
+					</div>
+					<div class="col-md-2 center">
+						<img src="{{baseUrl}}ishisystems/images/mesosphere-dc.png"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="datacenter-mesos">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-2 center">
+						<img src="{{baseUrl}}ishisystems/images/Apache-Mesos-dc.png"></img>
+					</div>
+					<div class="col-md-8 center">
+						<p><span class="big-font">Apache Mesos</span> is a cluster manager that simplifies the complexity of running applications on shared pool of servers.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="datacenter-section3">
+			<div class="container center">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-10">
+						<h2>Our Services</h2>
+						<p>We leverage our deep understanding of high performing and resource efficient compute infrastructure to help transform traditional data centers to a demand based, efficient computing platform.</p>
+						<p>Enterprises can potentially reduce 50% of their CAPEX and substantially reduce their operational outlay by leveraging our expertise. We help enterprise adopt Apache Mesos, deploy it to application environments and monitor and manage clusters. </p>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+				<div class="row datacenter-services">
+					<div class="center col-md-4">
+						<h4>Cluster Architecture</h4>
+						<p>Assessment, analysis and definition of cluster architecture, ensuring enterprise SLAs and integration with enterprise operations tool-sets for storage, service maintenance, monitoring and management</p>
+					</div>
+					<div class="col-md-4 center center-col">
+						<h4>Application On-boarding</h4>
+						<p>On-boarding applications or services onto the application specific requirements, legacy interfaces, performance and availability SLAs and security</p>
+					</div>
+					<div class="col-md-4 center">
+						<h4>Monitoring and Management</h4>
+						<p>Implement cluster monitoring and management to monitor and manage application and service health, cluster nodes, utilization, scheduling conflicts and node failures</p>
+					</div>
+				</div>
+			</div>
+		</div> 
+  </div>
+{%endblock content%}

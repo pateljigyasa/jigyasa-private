@@ -1,0 +1,183 @@
+<!-- Main Index Page of the Website -->
+{% extends 'base.html' %}
+ 
+
+ {% block content %}  
+ <div class="page-content">
+            <div class="wrap">
+                <div class="container">
+                    <div class="jumbotron center">
+                        <h1>Get equipped to <span class="big-text">thrive</span> in a knowledge economy</h1>
+                        <p>WE ENGINEER SYSTEMS FOR EXTREME PERFORMANCE AND SCALABILITY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-dark home-carousel">
+                <div class="margin-left" >
+                    <div id="carousel-home" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="MiniItem">
+                                    <div class="col-xs-12 col-sm-8 padding0 VerticalCenter">
+                                        <h2 class="col-sm-12 padding0">Introduction to</h2>
+                                        <p>CLOUD NATIVE COMPUTING</p>
+                                    </div>
+                                    <div class="bannerBtnCon"><a class="bannerButton" href="{{APP_CLOUD_NATIVE_WHITEPAPER_DOWNLOAD_LINK}}"><span>Download <br /> Whitepaper</span></a></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="MiniItem">
+                                    <div class="col-sm-8 col-xs-12 padding0 VerticalCenter">
+                                        <h2 class="col-sm-12 padding0">Container Security</h2>
+                                        <p>Announcing Our Strategic Partnership with Twistlock Inc.</p>
+                                        <div class="BannerLogo"><img src="{{ baseUrl }}ishisystems/images/banner_2_logos.png" alt=""/></div>
+                                    </div>
+                                    <div class="bannerBtnCon"> <a class="bannerButton" href="{{APP_CAROUSEL_LEARN_MORE_LINK}}"><span>Learn More</span></a></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="MiniItem">
+                                    <div class="col-sm-8 col-xs-12 padding0 VerticalCenter">
+                                        <h2 class="col-sm-12 padding0">Engineer</h2>
+                                        <p>Web Scale Systems for Performance and Scalability</p>
+                                    </div>
+                                    <div class="bannerBtnCon"> <a class="bannerButton" href="/high-performance/"><span>Learn More</span></a></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="MiniItem">
+                                    <div class="col-sm-8 col-xs-12 padding0 VerticalCenter">
+                                        <h2 class="col-sm-12 padding0">Considering<br/>Apache Mesos?</h2>
+                                        <p>Accelerate your Adoption</p>
+                                    </div>
+                                    <div class="bannerBtnCon">  <a class="bannerButton bannerButton2" href="{{APP_CLOUD_NATIVE_BROCHURE_DOWNLOAD_LINK}}"><span>Download <br /> Solutions Brochure</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-home" data-slide-to="1"></li>
+                                <li data-target="#carousel-home" data-slide-to="2"></li>
+                                <li data-target="#carousel-home" data-slide-to="3"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-light home-what center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="/high-performance/">
+                                <span class="outer-icon">
+                                    <i class="fa fa-gears "></i>
+                                </span>
+                                <h4>HIGH PERFORMANCE SYSTEMS</h4>
+                            </a>
+                            <p>Web scale, real-time systems for enterprise and institutional needs</p>
+                        </div>
+                        <div class="col-md-4 border">
+                            <a href="/big-data/">
+                                <span class="outer-icon">
+                                    <i class="fa fa-sitemap "></i>
+                                </span>
+                                <h4>DISTRIBUTED COMPUTING &amp; BIG DATA</h4>
+                            </a>
+                            <p>Daily ingestion of 3-5 terabytes, 500+ terabytes analyzed &amp; indexed</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/cloudnative/">
+                                <span class="outer-icon">
+                                    <i class="cloud_icon"></i>
+                                </span>
+                                <h4>CLOUD NATIVE COMPUTING</h4>
+                            </a>
+                            <p class="black-color">Achieve 10x-50x improvement in IT efficiency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-dark home-how center">
+                <div class="container">
+                    <div class="row margin-bottom">
+                        <div class="col-md-12">
+                            <h1>How do we do it?</h1>
+                            <p>Expertise in high-performance technologies and architectures, purpose-built frameworks and infrastructure for critical components.</p>
+                        </div>
+                    </div>
+                    <div class="row icon-row">
+                        <div class="col-md-4 center">Frameworks built using industry standard tools to quick-start projects</div>
+                        <div class="col-md-4 center border"><hr class="vertical-mode">Hybrid architecture that allows critical components to be abstracted to dedicated infrastructure<hr class="vertical-mode"></div>
+                        <div class="col-md-4 center">Proven design and implementation patterns for high-performance systems</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-blue assets center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Our Assets</h1>
+                            <p class="heading">Expertise, frameworks, processes and infrastructure to ensure high-quality and timely delivery</p>
+                        </div>
+                    </div>
+                    <div class="row row-2">
+                        <div class="col-md-4">
+                            <i class="fa fa-star"></i>
+                            <p>Domain expertise in finance, healthcare and insurance; experience in building large enterprise systems</p>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fa fa-globe"></i>
+                            <p>Offices in the US, Switzerland and India to ensure continuity of development effort and effective support across multiple time zones</p>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fa fa-refresh"></i>
+                            <p>Mature SDLC practices; focus on quality through TDD; agile development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-dark contact-us center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>We're Sure You Have Some Questions ...</h2>
+                            <p>We would love to hear from you. Let's have a talk.</p>
+                        </div>
+                    </div>
+                    <form role="form" action="/question-response/" method="POST" id="id_que_form">
+                    	 
+                    	{% csrf_token %}
+                        <div class="row">
+                            <div class="form-group col-md-6 col-md-offset-3">
+                                {{form.full_name}}
+                                <span class="error" ></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-md-offset-3">
+                                {{form.email}}
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-md-offset-3">
+                                {{form.message}}
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <button type="submit" class="btn btn-default" >SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     
+    {%endblock content%}

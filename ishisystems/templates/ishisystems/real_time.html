@@ -1,0 +1,133 @@
+{%extends 'base.html'%}  
+#Change page specific attributes 
+ 
+{% block title %}ISHI:Real-time Stream Processing{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/realtime-stream-processing/">{% endblock head_canonical %} 
+{% block link_cap_class %}active{% endblock %}
+{% block content %}
+<div class="row">
+	 {%block sub_menu%} 
+	     	{% include "capabilities_sub_menu.html" %}
+     {%endblock%}
+
+
+    <div class="page-content">
+		<div class="wrap">
+			<div class="container">
+				<div class="jumbotron center">
+					<h1>Real-time analytics and actionable insights.</h1>
+					<h4>No more daily, weekly, monthly batch processing!</h4>
+				</div>
+			</div>
+		</div>
+<div class="arch-diag-img">
+	<div class="container center">
+		<img src="{{baseUrl}}ishisystems/images/arch_diag.png" />
+
+	</div>
+</div>
+<div class="section-light">
+	<div class="container">
+		<div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-10 center">
+				<h2 class="margin-bottom">Real time Insights from Live Data Streams</h2>
+				<p class="margin-bottom">As Big Data has grown in relevance and adoption, the need to respond to it in near real time has also grown. Businesses now expect real time analytics, alerting,
+				on-line machine learning and continuous computation to achieve their goals.</p>
+				<p class="margin-bottom">We have been at the forefront of using best in class frameworks and tools to provide real time data processing solutions that are flexible and highly scalable.
+				Our solutions handle more than 50,000 TPS with response under 5ms while performing non-trivial processing.</p>
+			</div>
+			<div class="col-md-1">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="performance-grey-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 rapideye-label center">
+				<h2>RapidEye</h2>
+			</div>
+			<div class="col-md-5 rapideye-text center">
+				<h4>Our purpose-built framework for high-speed, real-time processing.</h4>
+			</div>
+			<div class="col-md-3 rapideye-link center">
+				<p class="font-bold"><a class="learn-more-box black-color" href="/services-framework/">LEARN MORE ...</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="text-section center">
+	<h2>Reference Architecture</h2>
+	<img src="{{baseUrl}}ishisystems/images/realtime_arch.png"></img>
+</div>
+<div class="section-blue processing-block cap-section">
+	<div class="container">
+		<div class="row correct-sign-row">
+			<div class="col-md-12 center ">
+				<i class="fa fa-check correct-sign"></i>
+				<b>Ingest data at volumes of 50,000 TPS with no data loss</b>
+			</div>
+		</div>
+		<div class="row correct-sign-row">
+			<div class="col-md-12 center">
+				<i class="fa fa-check correct-sign"></i>
+				<b>Massively parallel processing of data streams</b>
+			</div>
+		</div>
+		<div class="row correct-sign-row">
+			<div class="col-md-12 center">
+				<i class="fa fa-check correct-sign"></i>
+				<b>Low-latency continous computation and rule-based alerts</b>
+			</div>
+		</div>
+		<div class="row correct-sign-row">
+			<div class="col-md-12 center">
+				<i class="fa fa-check correct-sign"></i>
+				<b>Event correlation, distributed event processing</b>
+			</div>
+		</div>
+		<div class="row correct-sign-row">
+			<div class="col-md-12 center">
+				<i class="fa fa-check correct-sign"></i>
+				<b>Highly optimized for maximum performance on commodity servers</b>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section-light cap-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 center">
+				<img src="{{baseUrl}}ishisystems/images/technology_stack.png">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section-grey cap-section stream-block">
+	<div class="container">
+		<div class="row margin-bottom">
+			<div class="col-md-12 center">
+				<h2>Flexible stream ingestion through Data Pipes</h2>
+				<h4><i>Pluggable listeners and adaptors for various protocols</i></h4>
+				<h4><i>(HTTPS, STOMP, AMQP, RMI-IIOP, SRTP, FTP) and varied data formats (XML, JSON, ASN.1, CSV). </i></h4>
+			</div>
+		</div>
+		<div class="row margin-bottom">
+			<div class="col-md-12 center">
+				<h2>Streaming Map-Reduce</h2>
+				<h4><i>Real time, fault tolerant, distributed, in stream data processing </i></h4>
+				<h4><i>Complex processing engine with ability to sort, filter, transform, route, aggregate, live moving data </i></h4>
+			</div>
+		</div>
+		<div class="row bottom-margin">
+			<div class="col-md-12 center">
+				<h2>Analytics Engine & Data Cubes</h2>
+				<h4><i>Dynamic data cube generation for visualization using commercial tools suach as Tableau, Jasper </i></h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,159 @@
+{%extends 'base.html'%}  
+ <meta charset="utf-8">
+{% block title %}ISHI: Contact Us{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/contactus/">{% endblock head_canonical %} 
+{% block link_about_class %}active{% endblock %}
+{% block content %}
+	{%block sub_menu%} 
+	 	{% include  "about_drop_down_sub_menu.html" %}
+     {%endblock%}
+	 <div class="page-content">
+      <div class="wrap">
+<div class="section-light office-img">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4>US: +1 (201) 332 6900</h4>
+				<h4>IN: +91 79 4070 7575</h4>
+				<h4>CH: +41 (0) 41 500 27 27</h4>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 center  contactInformationUS">
+				<div class="clock-div timeUS">
+					<p class="clock-time" id="USTime"></p>
+					<p id="USTimeMeridien"></p>
+					<br><br>
+					<a class="big-font"><i class="fa fa-caret-up"></i></a>
+				</div>
+				<div>
+					<p class="city">Jersey City</p>
+					<p class="country">USA</p>
+				</div>
+				<div class="contact-box center" id="contactAddressUS">
+					<h4>Ishi Systems, Inc.</h4>
+					<p>
+						Harborside Financial Center<br>
+						Plaza 5,Suite 1400<br>
+						Jersey City, NJ 07311 USA<br><br>
+						Tel. 201.332.6900<br>
+						Fax. 201.332.1588
+					</p>
+				</div>
+		</div>
+		<div class="col-md-4 center contactInformationZurich">
+				<div class="clock-div timeZurich">
+					<p class="clock-time"  id="ZurichTime"></p>
+					<p id="ZurichTimeMeridien"></p>
+					<br><br>
+					<a class="big-font"><i class="fa fa-caret-up"></i></a>
+				</div>
+				<div>
+					<p class="city">Sursee</p>
+					<p class="country">SWITZERLAND</p>
+				</div>
+				<div class="contact-box center" id="contactAddressZurich">
+					<h4>Ishi Systems GmbH</h4>
+					<p>
+						Allee 1B, 6210 Sursee<br>
+						Canton of Lucerne<br>
+						Switzerland<br><br>
+						Tel. +41 (0)41 500 27 27
+					</p>
+				</div>
+		</div>
+		<div class="col-md-4 center contactInformationIndia">
+				<div class="clock-div timeIndia">
+					<p class="clock-time" id="IndiaTime"></p>
+					<p id="IndiaTimeMeridien"></p>
+					<br><br>
+					<a class="big-font"><i class="fa fa-caret-up"></i></a>
+				</div>
+				<div>
+					<p class="city">Ahmedabad</p>
+					<p class="country">INDIA</p>
+				</div>
+				<div class="contact-box center" id="contactAddressIndia">
+					<h4>Ishi Information India Pvt. Ltd</h4>
+					<p>
+						C-2, Safal Profitaire<br>
+						Prahladnagar Corporate Road<br>
+						Ahmedabad – 380015 Gujarat, India<br><br>
+						Tel. +91 (079) 407.07575
+					</p>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div class="section-orange">
+	<div class="container">
+		<div class="row center">
+			<div class="col-md-10">
+				<h2>Plan your visit to our corporate office in Jersey City</h2>
+			</div>
+			<div class="col-md-2"><a target="_blank" href="/directions/"><img src="{{baseUrl}}ishisystems/images/orange_arrow.png" /></a></div>
+		</div>
+	</div>
+</div>
+<div class="section-grey about cap-section">
+	<form action="/contact-response/" method="post" id="id_contact_form">
+	{% csrf_token %}
+	<div class="container" id="contactUs"> 
+		<div class="row margin-bottom">
+			<div class="col-md-12">
+				<h2 class="text-align-center">CONTACT US</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 form-group">
+				<!--  <input type="text" required="true" class="col-md-12 form-control" placeholder="Name" name="name" value="Name"> -->
+				 {{ form.full_name }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 form-group">
+				<!-- <input type="text" class="col-md-12 form-control" placeholder="Company" name="company" value="Company"> -->
+				 {{ form.company_name }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 form-group">
+				<!-- <input type="email" required="true" class="col-md-12 form-control" placeholder="Email" name="email" value="Email"> -->
+				{{ form.email }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 form-group">
+				<!-- <input type="text" class="col-md-12 form-control" placeholder="Phone" name="phone" value="Phone"> -->
+				{{ form.phone_no }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 form-group">
+				<!-- <textarea class="col-md-12 form-control" required="true" placeholder="Note" name="note" value="Note"></textarea> -->
+				{{ form.note }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-2 form-group">
+				<button class="btn btn-default">Send Message</button>
+			</div>
+		</div>
+	</div>
+	</form>
+</div>
+
+      </div>
+    </div>
+{%endblock content%}
+	

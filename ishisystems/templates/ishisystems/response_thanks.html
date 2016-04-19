@@ -1,0 +1,22 @@
+{%extends 'base.html'%}  
+ <meta charset="utf-8">
+{% block title %}ISHI: Contact Us{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/contactus/">{% endblock head_canonical %} 
+{%block body%}<body style="height: 100%;">{% endblock body %} 
+{%block header%}
+        {%include 'header_static.html' with li_display_text="CONTACT US"%}
+ {%endblock header%}   
+{% block content %}
+	<div class="page-content" style="height:500px;">
+      <div class="wrap">
+		<div class="jumbotron center">
+			<h2>Thank you for getting in touch!</h2>
+			<br><br>
+			<h4>You should hear back from us shortly.</h4>
+			<br><br>
+<a class="get-in-touch-box" href="/">CONTINUE BROWSING...</a>
+		</div>
+      </div>
+	  <div style="height:50%"></div>
+{%endblock content%}
+ 

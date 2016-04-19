@@ -1,0 +1,168 @@
+{%extends 'base.html'%} 
+
+#Change page specific attributes
+
+<head>
+	 {% block title %}ISHI-Capabilities:High Performance Systems, Real-time Processing, Distributed Computing, Big Data, Cluster Management{% endblock title %} 
+     {% block head_canonical %} <link rel="canonical" href="/capabilities/">{% endblock head_canonical %} 
+     {% block content %} 
+	     {%block sub_menu%} 
+	     	{% include  "capabilities_sub_menu.html" %}
+         {%endblock%}
+	    <div class="page-content">
+	      <div class="wrap">
+	      <div class="_cap-top">
+		<div class="container">
+			<div class="jumbotron center">
+				<h1>Faster, broader insights are critical for success in a <br>knowledge economy<a class="more-link" onclick="site.showHideCap();"><i class=" fa fa-caret-down"></i><span>more</span></a></h1>
+			<div class="row">
+				<div class="expanded-cap center col-md-9 col-md-offset-2">
+					<h4 class="margin-bottom">As we rapidly transition towards a knowledge economy, the ability to gather, process and analyze large volumes of data in real-time has become imperative for continued business success.</h4>
+					<h4 class="margin-bottom">Increasing data volumes and the need to bring together structured and unstructured data in a timely manner test existing systems and traditional architectural approaches.</h4>
+					<h4>At Ishi, our continued focus on real-time systems and big data technologies has resulted in mature frameworks and approaches that can address your most challenging system requirements.</h4>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-capabilities">
+		<div class="container capabilities-block">
+			<div class="center row">
+					<h4><i>Our expertise in engineering systems for knowledge enterprises</i></h4>
+					<h4><i>is reflected in our capabilities below.</i></h4>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row high-performance-block main-section" onclick="location.href='/high-performance/';">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>High Performance Systems</h2>
+								</div>
+							</div>
+							<div class="row margin-top details hidden">
+								<div class="col-md-12">
+									<p>New architecture approaches and frameworks based on cutting edge technologies enable us to unleash system performance and drive business innovation.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row case-study-block main-section">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>Case Study</h2>
+									<p>New business models with high performance computing</p>
+								</div>
+							</div>
+							<div class="row details hidden">
+								<div class="col-md-12">
+									<p class="learn-more"><a href="/case-study-high-performance-computing/"><i class="fa fa-caret-right"></i></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12 big-data-block main-section" onclick="location.href='/big-data';">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>Big Data Solutions</h2>
+								</div>
+							</div>
+							<div class="row margin-top details hidden">
+								<div class="col-md-12">
+									<p>Significant expertise in implementing multi-faceted big data solutions that cover real-time ingestion, distributed processing, indexed storage and analytics.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row case-study-bigdata-block main-section">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>Case Study</h2>
+									<p>Big data and compliance</p>
+								</div>
+							</div>
+							<div class="row details hidden">
+								<div class="col-md-12">
+									<p class="learn-more"><a href="/case-study-big-data"><i class=" fa fa-caret-right"></i></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row  performace-engg-block main-section" onclick="location.href='/high-performance/#performance-engg';">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>Performance Engineering</h2>
+								</div>
+							</div>
+							<div class="row margin-top details hidden">
+								<div class="col-md-12">
+									<p>We often encounter systems that are critical for business operations but are limited by performance challenges. Replacing such systems is not always an option.</p><br>
+									<p>Our engineers can identify and address performance bottlenecks and limitations in existing systems to help meet unmet business needs.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row data-center-scaling-block main-section" onclick="location.href='/datacenter/';">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>Data Center Scaling</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 margin-top details hidden">
+									<p>Increase efficiency and scalability of your data centers with Mesosphere and other container-based technologies.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row  real-time-block main-section" onclick="location.href='/realtime-stream-processing';">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>Real-time Stream Processing</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 margin-top details hidden">
+									<p>Our purpose-built framework enables distributed, parallel processing of high volume data streams with event correlation and analytics. The framework has been used to implement systems that can handle more than 50,000 transactions per second.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row case-study-realtime-block main-section">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>Case Study</h2>
+									<p>High speed, real-time processing</p>
+								</div>
+							</div>
+							<div class="row details hidden">
+								<div class="col-md-12">
+									<p class="learn-more"><a href="/case-study-real-time"><i class=" fa fa-caret-right"></i></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>  
+	{% endblock content %}
+	
+	
+     
+     
+     
+            

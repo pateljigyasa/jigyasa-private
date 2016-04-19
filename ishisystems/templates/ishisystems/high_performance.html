@@ -1,0 +1,191 @@
+{%extends 'base.html'%} 
+
+#Change page specific attributes 
+ 
+{% block title %}ISHI-Capabilities:High Performance Systems, Real-time Processing, Distributed Computing, Big Data, Cluster Management{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/high-performance/">{% endblock head_canonical %}
+{% block link_cap_class %}active{% endblock %}
+{% block content %} 
+ 
+	{%block sub_menu%} 
+	   {% include  "capabilities_sub_menu.html" %}
+    {%endblock%}
+    
+    <div class="page-content">
+		<div class="wrap">
+			<div class="container">
+				<div class="jumbotron center">
+					<h1>Engineer applications to scale as fast as your business.</h1>
+					<p>SOLUTIONS ENGINEERED FOR PERFORMANCE AND SCALABILITY</p>
+				</div>
+			</div>
+		</div>
+		<div style="background-color:#6699BB;">
+			<div class="row">
+				<div class="col-md-7 high-performance-text">
+					<div class="col-md-12" style="padding-bottom:15px;">
+							<p style="margin-left:30px;"> <i class="fa fa-check" style="margin-left:-35px;"></i>&nbsp;&nbsp;&nbsp;Web-scale, real-time systems with extreme performance requirements</p>
+					</div>
+					<div class="col-md-12" style="padding-bottom:15px;">
+							<p style="margin-left:30px;"> <i class="fa fa-check" style="margin-left:-35px;"></i>&nbsp;&nbsp;&nbsp;Designed to be highly scalable and resilient</p>
+					</div>
+					<div class="col-md-12" style="padding-bottom:15px;">
+							<p style="margin-left:30px;"> <i class="fa fa-check" style="margin-left:-35px;"></i>&nbsp;&nbsp;&nbsp;Agile, cost-effective development based on mature frameworks</p>
+					</div>
+				</div>
+				<div class="col-md-5 high-performance-img center">
+					<img src="{{baseUrl}}ishisystems/images/high_performance_splash_alt.png"></img>
+				</div>
+			</div>
+		</div>
+		<div class="section-dark">
+			<div class="container">
+				<div class="row margin-bottom">
+					<div class="col-md-12 center">
+						<h2>Leverage our Capability and Experience</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class = "col-md-1"></div>
+					<div class="col-md-10 center">
+						<p>Our extensive experience in developing and operating web scale solutions brings a unique engineering perspective. We leverage the expertise gathered to develop real-time and massively scalable systems that can handle more than 50,000 transactions per second.</p><br>
+						<p>Our architects and engineers have in depth understanding of high performance environments with diverse workloads (transactional, batch, messaging, document driven, in-memory) that span data centers and the cloud. This breadth of understanding allows us to deliver high performing solutions and platforms that can support your business across diverse environments.</p>
+					</div>
+					<div class = "col-md-1"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 center margin-bottom">
+				<h2>Design for System Performance & Scalability</h2>
+			</div>
+		</div>
+		<div class="performance-table">
+				<div class = "col-md-4 main-section first-row first-col" >
+					<div class="heading">
+						<p><b>ARCHITECT FOR FAILURE</b></p>
+					</div>
+					<div class="hidden details">
+						<p><b>ARCHITECT FOR FAILURE</b></p>
+						<p>Failure is inevitable, architect for it. Ensure that each application component can fail gracefully and recover.</p>
+					</div>
+				</div>
+				<div class = "col-md-4 main-section first-row">
+					<div class="heading">
+						<p><b>ENSURE REDUNDANCY</b></p>
+					</div>
+					<div class="hidden details">
+						<p><b>ENSURE REDUNDANCY</b></p>
+						<p>Redundant hardware, software and geographic locations are key to always available systems. Applications have to be aware and play well.</p>
+					</div>
+				</div>
+				<div class = "col-md-4 main-section first-row">
+					<div class="heading">
+						<p><b>BAKED-IN SECURITY</b></p>
+					</div>
+					<div class="hidden details">
+						<p><b>BAKED-IN SECURITY</b></p>
+						<p>Security baked into each and component. Assume a trust no one approach with zero tolerance.</p>
+					</div>
+				</div>
+				<div class = "col-md-4 main-section first-col">
+					<div class="heading">
+						<p><b>TIERED PERFORMANCE</b></p>
+					</div>
+					<div class="hidden details">
+						<p><b>TIERED PERFORMANCE</b></p>
+						<p>Security  and performance come with costs. Architecture should manage trade-offs between needs and costs.</p>
+					</div>
+				</div>
+				<div class = "col-md-4 main-section">
+					<div class="heading">
+						<p><b>DYNAMIC ELASTICITY</b></p>
+					</div>
+					<div class="hidden details">
+						<p><b>DYNAMIC ELASTICITY</b></p>
+						<p>Architecture should incorporate automated provisioning, deployment, scaling and failure recovery. Efficient operations and improves manageability.</p>
+					</div>
+				</div>
+
+				<div class = "col-md-4 main-section">
+					<div class="heading">
+						<p><b>MANAGE LATENCY</b></p>
+					</div>
+					<div class="hidden details">
+						<p><b>MANAGE LATENCY</b></p>
+						<p>Co-locate components and data wherever relevant. Eliminates costly network and IO related latency.</p>
+					</div>
+				</div>
+
+				<div class = "col-md-4 main-section first-col">
+					<div class="heading">
+						<p><b>FOCUS ON DATA FLOWS</b></p>
+					</div>
+					<div class="hidden details" style="width:inherit;">
+						<p><b>FOCUS ON DATA FLOWS</b></p>
+						<p>Data architecture is key to high performance systems. Architecture should ensure that access, durability, consistency, availability, volume of data are addressed.</p>
+					</div>
+				</div>
+
+				<div class = "col-md-4 main-section">
+					<div class="heading">
+						<p><b>PARTITION AND PARALLELIZE</b></p>
+					</div>
+					<div class="hidden details">
+						<p><b>PARTITION AND PARALLELIZE</b></p>
+						<p>Wherever possible architect to partition and parallelize. This approach allows for efficient, high performance systems with low latency.</p>
+					</div>
+				</div>
+
+				<div class = "col-md-4 main-section">
+					<div class="heading">
+						<p><b>LOOSELY COUPLE</b></p>
+					</div>
+					<div class="hidden details">
+						<p><b>LOOSELY COUPLE</b></p>
+						<p>Components should be loosely coupled and interface dependencies should be at a minimum.</p>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+		<div class="engineering-block" id="performance-engg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 center">
+						<h2>Performance Engineering</h2>
+					</div>
+				</div>
+				<div class="row margin-bottom">
+					<div class="col-md-12 center">
+						<p>Address performance and scalability challenges within existing systems.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 padding-10">
+						<div class="blue-box">
+							<p><h3>Test & Benchmark</h3></p>
+							<p>Perform Load, Stress, Endurance and Capacity tests. Analyze and report results. Benchmark system performance and evaluate alternate hardware and software architectures.</p>
+						</div>
+					</div>
+					<div class="col-md-4 padding-10">
+						<div class="blue-box">
+							<p><h3>Recommend & Implement </h3></p>
+							<p>Recommend standards and best practices according to your business & organizational objectives. Make recommendations to improve process efficiency and effectiveness; Provide input to major architectural design decisions to ensure optimal performance, scalability and maintainability.</p>
+						</div>
+					</div>
+					<div class="col-md-4 padding-10">
+						<div class="blue-box">
+							<p><h3>Sustainable Improvement</h3></p>
+								<p>Identify short and long term process, architecture and application improvements, operating cost benefits and ROI. Make applications and infrastructure readily scalable, reliable and easy to operate.</p>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+   	    
+{% endblock content %}
+ 

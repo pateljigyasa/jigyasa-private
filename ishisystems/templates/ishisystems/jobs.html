@@ -1,0 +1,68 @@
+ {%extends 'base.html'%}  
+{% load utils %}
+{% block title %}Work@ISHI{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/benefits-switzerland/">{% endblock head_canonical %}
+{%block body%}<body style="height: 100%;">{% endblock body %}
+{%block header%}
+        {%include 'header_static.html' with li_display_text="BACK TO OPEN POSITIONS" li_href="/careers/#positions"%}
+ {%endblock header%}    
+	{% block content %}
+		<div class="page-content">
+      <div class="wrap">
+		<div class="container center text-section">
+			<h2><span id="job_title"></span></h2>
+			<h4><span id="job_type"></span></h4>
+			<h4><span id="job_skills"></span></h4>
+		</div>
+		<div class="container">
+			<div class="row center">
+				<p><b>JOB DESCRIPTION</b></p>
+				<br>
+			</div>		
+			<div class="row">
+				<div class="col-md-1">
+				</div>
+				<div id="job_desc" class="col-md-10 left">
+					<p>Job description not available.</p>
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+			<div class="row center"><br><br>
+				<a class="get-in-touch-box" href="javascript:apply();">APPLY FOR JOB</a><br><br><br>							
+			</div>
+		</div>
+      </div>
+     {%endblock content%}
+      {% block page_usable_javascript %} 
+      <script>
+		var loc = "{{loc|safe}}";
+		var pos = {{pos|safe}};
+		var job; 
+		var type="";
+		var skills_set="-"
+		var jobs = {{jobs_loc| safe}};
+		job =  jobs[pos];
+		if(job[2]) {
+			type=job[2]+'@';
+		}
+		if(job[1]) {
+			skills_set=job[1];
+		}
+		document.getElementById('job_title').innerHTML = job[0];	
+		document.getElementById('job_skills').innerHTML = skills_set;	
+		document.getElementById('job_type').innerHTML = type+job[3];	
+		$(document).ready( function() {
+			if (job[4]!=''){ 
+				var url = {{baseUrl}} + "ishisystems" + job[4]; 
+				$("#job_desc").load(url);
+			}
+		});	
+		function apply(){
+			mail_str= encodeURI( "mailto:{{APP_CAREERS_EMAIL_ADDRESS}}?subject=Job Application: " + job[0] + "(" + loc + ")");
+			window.location.href = mail_str;
+			return;
+		} 
+	</script>
+	{% endblock page_usable_javascript %}
+	

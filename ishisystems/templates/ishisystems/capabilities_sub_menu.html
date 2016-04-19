@@ -1,0 +1,21 @@
+ <!-- Capabilities Sub menu-->
+ {% load utils %} 
+ {% bool_match_url_with_current_path 'realtime-stream-processing' as is_real_time_url %} 
+ <div class="row">
+	<div class="float-right">
+	  <ul class="nav navbar-nav sub-menu">
+		<li class="{%active 'high-performance' %} "><a  href="/high-performance/" class="dummyClass1">High Performance Systems</a></li>
+		<li class="{% active 'big-data'  %}" > <a href="/big-data/" class="dummyClass1">Distributed Computing & Big Data</a></li>
+		{% if is_real_time_url %}
+	    	<li class="{% active 'realtime-stream-processing' %} "><a  href="/realtime-stream-processing/" class="dummyClass1">Real-time Stream Processing</a></li>
+	    {%else%}
+	    	<li class="{% active 'cloudnative' %} "><a  href="/cloudnative/" class="dummyClass1">Cloud Native Computing</a></li>
+	     {%endif%}
+		
+	  </ul>
+	</div>
+</div>
+
+
+     
+	

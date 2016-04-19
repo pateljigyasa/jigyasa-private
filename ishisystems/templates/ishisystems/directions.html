@@ -1,0 +1,58 @@
+{%extends 'base.html'%}  
+ <meta charset="utf-8">
+{% block title %}ISHI@Plan Your Visit{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/benefits-switzerland/">{% endblock head_canonical %} 
+{% block head_meta_description %}
+<meta name="description" content="Plan your visit to our corporate office in New Jersey. We are close to 3 major airports (JFK/Newark Libery/LaGuardia) and easily accessible by public transportation (train/bus/ferry).">
+{% endblock head_meta_description %}
+{%block body%}<body style="height: 100%;">{% endblock body %} 
+
+{%block header%}
+	 {%include 'header_static.html' with li_display_text="PLAN YOUR VISIT"%}
+{%endblock header%}   
+	{% block content %}
+		<div class="page-content"  >
+      <div class="wrap">
+		<div class="jumbotron center">
+			<h2>Plan Your Visit to ISHI</h2>
+		</div>
+      </div>
+	  <div class="container center benefits-section">
+		<div class="row">
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-10">
+				<h4>For Mapping and GPS Directions use:</h4>
+				<p>185 Hudson Street<br>Jersey City, NJ 07302</p>
+				<hr>
+				<h4>Within New Jersey</h4>
+				<p><b>NJ Transit Trains:</b></p>
+				<p>Take NJ Transit trains to Newark Penn Station or Hoboken. Transfer to PATH train going to WTC. At Hoboken, you may use either the Hudson-Bergen Light Rail train to Harborside Financial Center or take the PATH to Exchange Place.  </p>
+				<p><b>PATH Trains From Points in New Jersey:</b></p>
+				<p>Get off at Exchange Place Station. (Link to: <a href="{{APP_DIRECTIONS_PATH_WEBSITE}}">PATH Website</a>). Exit the station using the main escalator. Upon exiting the Exchange Place PATH Station, walk one block west on Christopher Columbus Drive (Plaza One is on your right) and turn right at the corner heading North. Walk to Light Rail Pedestrian Crossing, cross the Light Rail tracks, and the entrance to Plaza 5 is straight ahead. </p>
+				<p><b>Hudson-Bergen Light Rail:</b></p>
+				<p>Take the 22nd St, the Bayonne Flyer or the Tonnele Ave train and get off at Harborside Financial Center. Harborside Plaza 5 is located diagonally across from the Light Rail Station. </p>
+				<hr>
+				<h4>From New York</h4>
+				<p><b>PATH Trains From 33rd Street:</b></p>
+				<p>PATH operates direct service to Exchange Place from the World Trade Center Station. Board either the Hoboken or Newark train. They both stop at Exchange Place. Upon exiting the Exchange Place PATH Station walk one block West on Christopher Columbus Drive (Harborside Plaza One is on your right) and then turn right at the corner heading North. Walk to Light Rail Pedestrian crossing, cross the Light Rail tracks and the entrance to Plaza 5 is straight ahead. </p>
+				<p><b>PATH Trains From World Trade Center:</b></p>
+				<p>Board PATH train marked Journal Square. Change at the Pavonia/Newport Station (Track #2) for the train to Exchange Place. Upon exiting the Exchange Place PATH Station, walk one block west on Christopher Columbus Drive (Plaza One is on your right) and turn right at the corner heading North. Walk to Light Rail Pedestrian Crossing, cross the Light Rail tracks, and the entrance to Plaza 5 is straight ahead. </p>
+				<p><b>By Ferry from Lower Manhattan (Pier II and World Financial Center) and Midtown (West 38” Street):</b></p>
+				<p>NY Waterway operates direct ferry service from World Financial Center and West 38th Street to Harborside Financial Center. Upon exiting the ferry, walk straight ahead to the Light Rail pedestrian crossing, cross over the tracks and turn left walking south on Hudson Street. Plaza 5 is directly in front of you. NY Water Taxi operates weekday ferry service from Pier 11 (Wall Street) to Jersey City (Paulus Hook), located 3 blocks south of Harborside. Upon exiting the ferry walk north along the river and turn left onto Christopher Columbus Drive (the Exchange Place PATH Station will be in front of you) and walk one block and turn right heading north. Cross at the Light Rail pedestrian crossing and the entrance to Plaza 5 will be straight ahead.</p>
+				<hr>
+				<h4>From Area Airports (Newark, JFK, La Guardia)</h4>
+				<p><b>From Newark Liberty International Airport (EWR)</b></p>
+				<p>Take AirTrain to Newark Liberty International Airport Train Station. At Airport Train Station, take a NJ Transit train on the North Jersey Coast Line or Northeast Corridor Line to Newark Penn Station. At Newark Penn Station, transfer to PATH train going to WTC. Follow directions for PATH listed in "PATH Trains from Points in New Jersey" section above.</p>
+				<p><b>From New York John F. Kennedy International Airport (JFK):</b></p>
+				<p>Take AirTrain to Jamaica Station. At Jamaica Station, take the E subway to World Trade Center in Manhattan. From the WTC station, take the PATH train to Jersey City. Follow directions for PATH listed in "PATH Trains from World Trade Center" section above.</p>
+				<p><b>From New York LaGuardia Airport (LGA):</b></p>
+				<p>Q33 and Q47 buses go to Roosevelt Avenue/74th Street where you can transfer to the New York Subway . Take the E train (downtown) to World Trade Center in Manhattan. From the WTC station, take the PATH train to Jersey City. Follow directions for PATH listed in "PATH Trains from World Trade Center" section above.</p>
+				<br>
+			</div>
+			<div class="col-md-1">
+			</div> 
+		</div>
+	  </div>
+		 
+	  {%endblock content%}

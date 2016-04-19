@@ -1,0 +1,43 @@
+{%extends 'base.html'%}  
+
+ {% block title %}ISHI: Some of our clients..{% endblock title %} 
+ {% block head_canonical %} <link rel="canonical" href="/contactus/">{% endblock head_canonical %}
+ {% block link_about_class %}active{% endblock %}
+ {% block content %}
+	{%block sub_menu%} 
+	 	{% include  "about_drop_down_sub_menu.html" %}
+     {%endblock%}
+	<div class="page-content">
+      <div class="wrap">
+		<br><br>
+		<div class="section-orange">
+			<div class="container">
+				<div class="row center">
+						<h2>Our Clients</h2><br>
+				</div>
+			</div>
+		</div>
+		<div class="container center" style="padding:40px;">
+				{% if clients %} 
+				<div class="row" style="padding:30px;"> 
+				    {% for client in clients %}
+				    <div class="col-md-4"><img src="{{baseUrl}}ishisystems/{{ client.img_path }}"></img></div>
+				
+				        <!-- if last column in row -->
+				        {% if forloop.counter|divisibleby:"3" and not forloop.last %}
+				        </div><div class="row" style="padding:30px;">
+				        {% endif %}
+				
+				    {% endfor %}
+			
+				</div>
+				 
+             
+        		{% else %}
+            		<strong>There are no clients to view.</strong>
+        		{% endif %} 
+				</div>
+			</div>
+	</div>
+	</div>
+{%endblock content%}

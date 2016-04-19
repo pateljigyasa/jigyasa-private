@@ -1,0 +1,27 @@
+{%extends 'base.html'%} 
+from django.utils.http import urlquote_plus
+#Change page specific attributes 
+ 
+{% block title %}Case Study:High Performance Computing{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/benefits-switzerland/">{% endblock head_canonical %} 
+{%block body%}<body style="height: 100%;">{% endblock body %}
+	{%block header%}
+        {%include 'header_static.html' with li_display_text="CASE STUDY@HIGH PERFORMANCE COMPUTING"%}
+	{%endblock header%} 
+	 
+	{% block content %}
+    <div class="page-content" style="height:500px;">
+      <div class="wrap">
+		<div class="jumbotron center">
+			<h2>New Business Models with High Performance Computing</h2>
+			<h4>Case Study</h4>
+			<br>
+			<p>Access to this document is restricted.  Use the link below to request access.</p>
+			<br><br>
+			<a class="get-in-touch-box" href="mailto:{{APP_REQUEST_EMAIL_ADDRESS}}?subject=Case Study Access-High Performance Computing">REQUEST ACCESS</a>&nbsp;&nbsp;&nbsp;
+			<a class="get-in-touch-box" href="/capabilities/">BACK</a>
+		</div>
+      </div>
+	  <div style="height:50%"></div>
+    </div>
+ {% endblock content %}

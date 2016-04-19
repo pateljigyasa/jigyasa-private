@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Base Template for whole site. Every Template Extends this. It contains header, footer, css, js, and static files and headers common in all templates -->
+
+{% load static %}
+{% load utils %}
+
+{% static "" as baseUrl %} 
+ 
+<html class="wf-brandongrotesque-i4-active wf-brandongrotesque-i5-active wf-brandongrotesque-i7-active wf-brandongrotesque-n5-active wf-brandongrotesque-n7-active wf-brandongrotesque-n4-active wf-active">
+    <!-- Make modifable head elements -->
+    <head>
+    	<meta charset="utf-8"> 
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}ISHI: High Performance, Real-time Systems &amp; Distributed Computing{% endblock title %}</title>
+        {% block head_favicon %}
+            <link rel="shortcut icon" type="image/x-icon"
+                  href="{{baseUrl}}ishisystems/images/favicon.ico">
+        {% endblock head_favicon %}
+        {% block head_meta %}
+            {% block head_meta_charset %}
+                <meta http-equiv="Content-Type"
+                      content="text/html; charset=utf-8" />
+            {% endblock head_meta_charset %} 
+            {% block head_meta_viewport %}
+                <meta name="viewport"
+                      content="width=device-width, initial-scale=1.0">
+            {% endblock head_meta_viewport %}
+            {% block head_meta_description %}
+            	<meta name="description" content="Ishi is a software services and product engineering firm focused on highly scalable, real-time systems.">
+            {% endblock head_meta_description %}
+            {% block head_meta_keywords %}
+   				<meta name="keywords" content="High Performance Systems, Performance Engineering, Real-time Stream Processing, Real-time Analytics, Distributed Computing, Big Data, Mesosphere, Mesos, RapidEye, Cluster Management, Data center scaling, product development, managed solutions">
+   			{% endblock head_meta_keywords %}
+   			
+   			
+        {% endblock head_meta %}
+        {% block head_css %}
+        	{% block head_canonical %}
+   			<link rel="canonical" href="">
+   			 {% endblock head_canonical %}
+            {% block head_css_site %}
+                <link href="{% version "ishisystems/css/bootstrap.min.css" %}"
+                      rel="stylesheet" media="screen">
+                <link href="{% version "ishisystems/css/is-app-main.css" %}"
+                      rel="stylesheet" media="screen">
+                <link href="{% version "ishisystems/css/font-awesome.min.css"%}"
+                      rel="stylesheet" media="screen">
+            {% endblock head_css_site %}
+            {% block head_css_section %}{% endblock head_css_section %}
+            {% block head_css_page %}{% endblock head_css_page %}
+        {% endblock head_css %}
+         <script src="//use.typekit.net/kij8iqu.js"></script>
+   		<script>try {Typekit.load();}catch(e){}</script>
+    </head>
+     
+    {% block body %}<body>{%endblock body%}
+	    {# The Header #}
+	    {%block header%}
+	    <!-- Fixed navbar -->
+	    <!-- Header of the website -->
+        	{% include 'header.html' %} 
+       {%endblock%} 
+     	
+	    {# The Document Body #} 
+	    {% block content %} 
+	        {#The submenu #}
+	        	{%block sub_menu%} {%endblock%} 
+	    {% endblock %}
+	    
+	    {# The Footer #}
+	    {%block footer%}   
+	    	{% include 'footer.html' %} 
+	    {%endblock footer%}   
+	
+    {# Set of blocks that can be used to display JavaScript files #} 
+    	{% block site_javascript %}
+    		<script src="{% version "ishisystems/js/jquery.min.js"%}"></script>
+            <script src="{%version "ishisystems/js/bootstrap.min.js"%}"></script>
+            <script src="{% version "ishisystems/js/is-app-main.js"%}"></script>
+            <script src="{% version "ishisystems/js/clock.js"%}"></script> 
+            <script src="{% version "ishisystems/js/jquery-migrate-1.2.1.min.js"%}"></script>
+            <script src="{% version "ishisystems/js/jquery.validate.min.js"%}"></script>
+            <script src="{% version "ishisystems/js/placeholders.min.js"%}"></script>
+            <script src="{% version "ishisystems/js/onload.js"%}"></script>
+            <!--  <script >
+	            (function (i, s, o, g, r, a, m) {
+	                i['GoogleAnalyticsObject'] = r;
+	                i[r] = i[r] || function () {
+	                    (i[r].q = i[r].q || []).push(arguments)
+	                }, i[r].l = 1 * new Date();
+	                a = s.createElement(o),
+	                        m = s.getElementsByTagName(o)[0];
+	                a.async = 1;
+	                a.src = g;
+	                m.parentNode.insertBefore(a, m)
+	            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	
+	            ga('create', 'UA-55991841-1', 'auto');
+	            ga('send', 'pageview'); 
+	            
+	            
+    		</script>-->
+    	{%endblock site_javascript%}
+        {% block page_usable_javascript %}{% endblock page_usable_javascript %} 
+  </body>  
+  
+</html>

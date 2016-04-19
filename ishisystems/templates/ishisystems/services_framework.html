@@ -1,0 +1,130 @@
+{%extends 'base.html'%} 
+
+#Change page specific attributes 
+ 
+{% block title %}ISHI: RapidEye Framework{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/services-framework/">{% endblock head_canonical %}
+ 
+{% block content %} 
+	{%block sub_menu%} 
+	     	{% include  "services_sub_menu.html" %}
+    {%endblock%}
+
+    <div class="page-content">
+      <div class="wrap">
+
+	<div class="container">
+		<div class="jumbotron center">
+			<h1>Is your big data causing big headaches?</h1>
+			<h4>RapidEye offers a simplified approach to building knowledge based systems</h4>
+		</div>
+	</div>
+
+<div class="section-blue rapid-eye-text">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 center">
+				<h3><span class="big-font">RapidEye</span> is a configurable, real-time processing and analysis framework for very high volume processing scenarios.</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="services-framework-img">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 center">
+				<img src="{{baseUrl}}ishisystems/images/framework_banner.png"></img>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="big-data-table">
+	<div class="row">
+		<div class="col-md-4 center section1">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="margin-bottom">Big Data != Big $$$</h2>
+ 				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 center">
+					<p>Configuration-driven framework based on open source technologies reduces complexity and costs</p><br>
+					<p>Can quickly adapt to changing data availability and business requirements</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 center section2">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="margin-bottom">Big Data != Tomorrow</h2>
+ 				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 center">
+					<p>Instant insights and actionable alerts with real-time stream processing, aggregation and analytics</p><br>
+					<p>Mobile interface for notifications and alerts guarantees accessibility</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 center section3">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="margin-bottom">Big Data != Big Infra</h2>
+ 				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 center">
+					<p>In-line processing and simplifies architecture and reduces deployment footprint and infrastructure needs.</p><br>
+					<p>Integrated elastic search capabilities for fast access to stored data without the need for additional tools</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="scalable-block">
+	<div class="container">
+		<div class="row margin-bottom">
+			<div class="col-md-12 center">
+				<h2>Scalable Performance and Ease of Implementation</h2>
+			</div>
+		</div>
+		<div class="row margin-bottom">
+			<div class="center col-md-4">
+				<h4>Performance</h4>
+				<p>Designed for very high performance scenarios where millisecond responses are critical</p>
+			</div>
+			<div class="col-md-4 center">
+				<h4>Scalability</h4>
+				<p>Can handle very high volume real-time streams(more than 50,000 tps), ability to process and index 10+ terabytes daily</p>
+			</div>
+			<div class="col-md-4 center">
+				<h4>Adaptability</h4>
+				<p>Message-based architecture with additional RESTful interfaces; can adapt to any enterprise scenario</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 center">
+				<h4>Configuration-Driven</h4>
+				<p>Implementation is largely configuration-drive, from integration of data streams to analysis and rules definition</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="big-data-solution">
+	<div class="container">
+		<div class="col-md-5 big-data-arch">
+			<h1>Where does <br><b>RapidEye</b> fit?</h1>
+			<h4>Complements batch analytics to provide<br>instant insights; seamlessly plugs-in to your<br> data environment </h4>
+		</div>
+		<div class="col-md-7 center">
+			<img src="{{baseUrl}}ishisystems/images/rapid_eye_fit.png"></img>
+		</div>
+	</div>
+</div>
+<div class="text-section center">
+	<h2>A Reference Implementation</h2>
+	<img src="{{baseUrl}}ishisystems/images/rapid_eye_reference_arch.png"></img>
+</div>
+      </div>
+    </div>
+ {%endblock content%}

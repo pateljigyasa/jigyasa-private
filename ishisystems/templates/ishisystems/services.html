@@ -1,0 +1,168 @@
+{%extends 'base.html'%} 
+
+#Change page specific attributes
+
+<head>
+{% block title %}ISHI-Services:Managed Solutions, RapidEye, Data Center Scaling, Product Development{% endblock title %} 
+{% block head_canonical %} <link rel="canonical" href="/services/">{% endblock head_canonical %} 
+{% block content %}
+	 {%block sub_menu%} 
+	     	{% include  "services_sub_menu.html" %}
+         {%endblock%}
+    <div class="page-content">
+   		<div class="wrap">
+		      <div class="cap-top">
+				<div class="container">
+					<div class="jumbotron center">
+						<h1>A technology partner who is aligned to your<br> business objectives</h1>
+					</div>
+				</div>
+			</div>
+			<div class="services-headline cap-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 center">
+							<img src="{{baseUrl}}ishisystems/images/services_banner_bubble.png">
+							<p><h4>Ajay Mohan, CEO</h4></p>
+						</div>
+						<div class="col-md-7 center">
+							<p class="margin-top quote">"Our managed delivery approach removes the uncertainities associated with systems development and allows you to focus on growing your business."</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cap-section process-section">
+				<div class="container">
+						<div class="float-right col-md-6 text-align-center "><img src="{{baseUrl}}ishisystems/images/process-img.png"></div>
+						<div class="float-right col-md-6 text-align-center ">
+							<h2 class="margin-bottom">Managed Solutions</h2>
+							<p>Our technology and domain experts assume responsibility for end-to-end delivery of software solutions.</p><br>
+							<p>Beyond delivery, we ensure effective transition to sustainable operational models by empowering your support teams or leveraging our global operations centers.</p><br>
+							<p class="font-bold"><a class="learn-more-box black-color" href="/managed-solutions/">LEARN MORE ...</a></p>
+						</div>
+					</div>
+				</div>
+			<div class="product-development">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-align-center">Product Development</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="text-align-center"><p>Accelerate your time to market with our experienced product development teams.</p></h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="product-process-container text-align-center">
+							<img src="{{baseUrl}}ishisystems/images/product_process.jpg" />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class = "col-md-1"></div>
+							<div class = "col-md-10">
+								<p class="text-align-center">Take your product from the whiteboard to market in record time. Our engineers assist you through the entire
+								product development lifecycle in a fluid approach that allows continuous market validation and feedback to drive
+								the product design and roadmap.</p><br>
+								<p class="text-align-center font-bold"><a class="get-in-touch-box" href="/contactus/#contactUs">GET IN TOUCH</a></p>
+							</div>
+							<div class = "col-md-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="row">
+					<div class="col-md-7 data-center-block">
+						<div class="row margin-bottom">
+							<div class="col-md-12">
+								<h2 class="text-align-center">Data Center Scaling</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="text-align-center"> Systems availability, performance, and support are critical to your clients and employees. Unfortunately, these typically come with very big price tags.</p>
+							</div>
+						</div>
+						<div class="row margin-top">
+							<div class="col-md-12">
+								<p class="text-align-center">At ISHI, our system engineers are constantly looking for ways to improve data center efficiency, scaling and service quality. Our goal is to enable sustainable and profitable operating models of our clients.</p>
+							</div>
+						</div>
+						<div class="row get-in-touch-block">
+							<div class="col-md-12">
+								<p class="text-align-center font-bold"><a class="get-in-touch-box" href="/datacenter/">LEARN MORE..</a></p>
+						</div>
+					</div>
+				</div>
+			<div class="col-md-5 mesos-block">
+				<div class="row text">
+					<div class="col-md-12">
+						<h4 class="float-left">Learn how we leverage Apache Mesos to reduce infrastructure footprint by 50% for a real-time, high availability system.</h4>
+						<a href="/case-study-data-center-scaling" target="_blank" style="color:#fff;"><i class="fa fa-caret-right float-left"></i></a>
+	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 apache-mesos"></div>
+					<div class="col-md-6 mesophere"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="section-light">
+		<div class="container margin-bottom">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-align-center margin-bottom">Frameworks</h2>
+				</div>
+			</div>
+			<div class="row margin-bottom framework-heading">
+				<div class="col-md-12">
+					<h4 class="text-align-center"><i>Let's not reinvent the wheel every time. Our mature frameworks accelerate</i></h2>
+					<h4 class="text-align-center"><i>systems development and ensure quality.</i></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="row rapid-eye-img">
+						<div class="col-md-2 float-left">
+							<img src="{{baseUrl}}ishisystems/images/rapideye.jpg"></img>
+						</div>
+						<div class="col-md-2 float-right" style="margin-right:20px;">
+							<h2>SHOWCASE</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 rapid-eye-text">
+							<div class="row bottom-margin">
+								<div class = col-md-2></div>
+								<div class="col-md-8 center">
+									<h3>Know fast... know more... with actionable intelligence gathered from real-time data streams.</h3>
+								</div>
+								<div class = col-md-2></div>
+							</div>
+							<div class="row bottom-margin" style="padding-left:20px;padding-right:20px;">
+								<div class="col-md-12 center">
+									<p>RapidEye is a highly scalable stream-processing framework can collate, process, analyze, and index multiple high frequency data streams in real-time. RapidEye offers  a simplified approach and toolkit for building knowledge based systems.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p class="text-align-center font-bold"><a class="get-in-touch-box" href="/services-framework/">LEARN MORE...</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	{%endblock content%}
